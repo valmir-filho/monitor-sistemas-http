@@ -28,7 +28,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 # ============================================================
-# Configurações da API de SMS
+# Configurações da API de SMS.
 # ============================================================
 
 API_SMS_URL = "https://api360.classeaservicos.com.br/api/send.php"
@@ -40,7 +40,7 @@ CODIGO_FORNECEDOR = "classea_token"
 
 
 # ============================================================
-# Configurações de diretórios e arquivos
+# Configurações de diretórios e arquivos.
 # ============================================================
 
 BASE_DIR = Path(__file__).resolve().parent
