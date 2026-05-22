@@ -1,0 +1,66 @@
+{
+  "intervalo_segundos": 60,
+  "falhas_para_alertar": 3,
+
+  "sistemas": [
+    {
+      "nome": "Tasy",
+      "url": "https://tasy-feas.curitiba.pr.gov.br/",
+      "metodo": "GET",
+
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+      },
+
+      "status_esperado": [200, 301, 302],
+
+      "timeout_segundos": 10,
+
+      "texto_esperado": "tasy",
+
+      "verificar_ssl": true,
+
+      "usar_powershell_fallback": false
+    },
+
+    {
+      "nome": "Senior",
+      "url": "https://platform.senior.com.br/",
+      "metodo": "GET",
+
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+      },
+
+      "status_esperado": [200, 301, 302],
+
+      "timeout_segundos": 10,
+
+      "texto_esperado": "senior",
+
+      "verificar_ssl": false,
+
+      "usar_powershell_fallback": true
+    },
+
+    {
+      "nome": "Pixeon",
+      "url": "https://feas-login.pixeonkorus.com/",
+      "metodo": "GET",
+
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+      },
+
+      "status_esperado": [200, 301, 302],
+
+      "timeout_segundos": 10,
+
+      "texto_esperado": "pixeon",
+
+      "verificar_ssl": false,
+
+      "usar_powershell_fallback": true
+    }
+  ]
+}
