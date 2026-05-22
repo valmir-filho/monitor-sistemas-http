@@ -10,16 +10,16 @@ O sistema foi projetado para execução contínua em ambiente Windows Server, ut
 
 ## Funcionalidades
 
-- Monitoramento contínuo de sistemas HTTP/HTTPS  
-- Validação de disponibilidade por status HTTP  
-- Verificação de conteúdo esperado na página  
-- Controle de falhas consecutivas  
-- Envio automático de SMS em caso de indisponibilidade  
-- Alerta automático de recuperação do sistema  
-- Geração de logs automáticos  
-- Fallback PowerShell para problemas TLS/SSL  
-- Execução contínua como serviço Windows  
-- Configuração simplificada via JSON  
+- Monitoramento contínuo de sistemas HTTP/HTTPS;  
+- Validação de disponibilidade por status HTTP; 
+- Verificação de conteúdo esperado na página;
+- Controle de falhas consecutivas;
+- Envio automático de SMS em caso de indisponibilidade;
+- Alerta automático de recuperação do sistema;
+- Geração de logs automáticos;
+- Fallback PowerShell para problemas TLS/SSL;
+- Execução contínua como serviço Windows;
+- Configuração simplificada via JSON.
 
 ---
 
@@ -63,13 +63,13 @@ monitor-sistemas-http/
 
 ## Requisitos do servidor
 
-- Windows Server com acesso à internet  
-- Python 3 instalado  
-- PowerShell habilitado  
-- Acesso liberado aos endpoints monitorados  
-- Permissão de execução de serviços Windows  
-- NSSM instalado  
-- Permissão de saída HTTPS para API SMS  
+- Windows Server com acesso à internet;
+- Python 3 instalado;
+- PowerShell habilitado;
+- Acesso liberado aos endpoints monitorados;
+- Permissão de execução de serviços Windows; 
+- NSSM instalado;
+- Permissão de saída HTTPS para API SMS.
 
 ---
 
@@ -117,14 +117,14 @@ O serviço deve estar configurado para iniciar automaticamente junto ao sistema 
 
 O arquivo `config.json` permite configurar:
 
-- Intervalo entre verificações  
-- Quantidade de falhas antes do alerta  
-- URLs monitoradas  
-- Métodos HTTP  
-- Timeout das requisições  
-- Validação SSL  
-- Fallback PowerShell  
-- Texto esperado no HTML  
+- Intervalo entre verificações;
+- Quantidade de falhas antes do alerta;
+- URLs monitoradas;
+- Métodos HTTP;
+- Timeout das requisições;
+- Validação SSL;
+- Fallback PowerShell;
+- Texto esperado no HTML.
 
 ---
 
@@ -146,22 +146,22 @@ monitor_sistemas.log
 
 ## Segurança
 
-- Controle de falhas consecutivas para evitar falso positivo  
-- Validação de conteúdo HTML retornado  
-- Monitoramento resiliente com fallback PowerShell  
-- Execução restrita ao ambiente institucional  
-- Possibilidade de integração futura com variáveis de ambiente (.env)  
-- Registro completo de eventos em log  
+- Controle de falhas consecutivas para evitar falso positivo;
+- Validação de conteúdo HTML retornado;
+- Monitoramento resiliente com fallback PowerShell;
+- Execução restrita ao ambiente institucional;
+- Possibilidade de integração futura com variáveis de ambiente (.env);
+- Registro completo de eventos em log.
 
 ---
 
 ## Observações
 
-- Aplicação desenvolvida para uso interno institucional  
-- Projeto otimizado para baixa utilização de recursos  
-- Compatível com execução contínua 24x7  
-- Dependência de conectividade HTTPS externa  
-- Possibilidade de expansão para monitoramento Oracle, portas TCP, containers e JMX  
+- Aplicação desenvolvida para uso interno institucional;
+- Projeto otimizado para baixa utilização de recursos;
+- Compatível com execução contínua 24x7;
+- Dependência de conectividade HTTPS externa;
+- Possibilidade de expansão para monitoramento Oracle, portas TCP, containers e JMX.
 
 ---
 
@@ -174,4 +174,4 @@ Setor de TI – FEAS
 
 ## Used IDE
 
-Visual Studio Code
+Visual Studio Code.
